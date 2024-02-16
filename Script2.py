@@ -65,6 +65,7 @@ class ArbolBinarioOrdenado:
 #FUNCIÓN  MAIN
 if __name__ == "__main__":
     recorrido = "DDUUDDUUUDU" #MODIFICAR EL RECORRIDO DEL VIAJERO
+    print("Recorrido: ", recorrido)
     print("Número de valles en el recorrido:", valles(recorrido))
 #ÁRBOL BINARIO DEFINIDDO DEFINIDO 
     arbol = ArbolBinarioOrdenado(10)
@@ -82,7 +83,7 @@ if __name__ == "__main__":
     arbol.agregar(11)
     arbol.agregar(13)
 
-    print("Recorrido del arbol:\n")
+    print("\nRecorrido del arbol:\n")
     print("Recorrido preorden:")
     arbol.preorden(arbol.raiz)
     print("\nRecorrido inorden:")
