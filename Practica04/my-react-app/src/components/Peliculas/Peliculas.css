@@ -1,0 +1,20 @@
+/* Estilos para el contenedor del componente */
+.pelicula-container {
+  text-align: center;
+}
+
+/* Estilos para el título del componente */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilos para el menú */
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para los componentes de agregar y eliminar película */
+.menu > div {
+  margin: 0 10px;
+}

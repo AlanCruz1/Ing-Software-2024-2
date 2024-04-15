@@ -1,0 +1,9 @@
+/* Estilos para el contenedor del componente */
+.ver-cliente-container {
+  text-align: center;
+}
+
+/* Estilos para el título del componente */
+h3 {
+  margin-bottom: 10px;
+}

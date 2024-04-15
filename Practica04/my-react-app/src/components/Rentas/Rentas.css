@@ -1,0 +1,36 @@
+/* Estilos para el contenedor del componente */
+.rentas-container {
+  text-align: center;
+}
+
+/* Estilos para el título del componente */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilos para el menú de rentas */
+.rentas-menu {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de la lista del menú */
+.rentas-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rentas-menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Estilos para los enlaces del menú */
+.rentas-menu ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Estilos para el hover de los enlaces del menú */
+.rentas-menu ul li a:hover {
+  text-decoration: underline;
+}

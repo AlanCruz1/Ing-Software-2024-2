@@ -1,37 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Expenses from './components/Expenses/Expenses';
-function App(){
-  
-  const expensesList = [
-    {
-      concept:"Car wash",
-      amount: 65
-    },
-    {
-      concept: "Pet's bath",
-      amount: 100
-    },
-    {
-      concept: "Gamer keyboard",
-      amount: 650
+import React, { useState } from "react";
+import Cliente from "./components/Clientes/Clientes";
+import Peliculas from "./components/Peliculas/Peliculas";
+import Rentas from "./components/Rentas/Rentas";
+
+function App() {
+  const [opcionSeleccionada, setOpcionSeleccionada] = useState("Cliente");
+
+  const mostrarContenido = () => {
+    switch (opcionSeleccionada) {
+      case "Cliente":
+        return <Cliente />;
+      case "Peliculas":
+        return <Peliculas />;
+      case "Rentas":
+        return <Rentas />;
+      default:
+        return null;
     }
-  ];
+  };
 
-
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          <Expenses items ={expensesList} />
-        </p>
-      </div>
-    );
+  return (
+    <div>
+      <h1>Menú</h1>
+      <ul>
+        <li onClick={() => setOpcionSeleccionada("Cliente")}>Cliente</li>
+        <li onClick={() => setOpcionSeleccionada("Peliculas")}>Peliculas</li>
+        <li onClick={() => setOpcionSeleccionada("Rentas")}>Rentas</li>
+      </ul>
+      {mostrarContenido()}
+    </div>
+  );
 }
 
 export default App;

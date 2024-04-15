@@ -1,0 +1,36 @@
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el título del menú */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el menú */
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los botones del menú */
+.menu button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilos para el hover de los botones */
+.menu button:hover {
+  background-color: #0056b3;
+}
